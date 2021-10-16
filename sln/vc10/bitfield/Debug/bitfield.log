@@ -1,0 +1,8 @@
+﻿cl : командная строка warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+  tset.cpp
+  tbitfield.cpp
+C:\Users\Angela\mp2-lab1-set\src\tbitfield.cpp(123,6): warning C4101: i: неиспользованная локальная переменная
+C:\Users\Angela\mp2-lab1-set\src\tbitfield.cpp(147,6): warning C4101: i: неиспользованная локальная переменная
+  Создание кода...
+C:\Users\Angela\mp2-lab1-set\src\tbitfield.cpp(107): warning C4715: TBitField::operator==: значение возвращается не при всех путях выполнения
+  bitfield.vcxproj -> C:\Users\Angela\mp2-lab1-set\sln\vc10\Debug\bitfield.lib

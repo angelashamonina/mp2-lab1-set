@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\docs",
+    "\\gtest",
+    "\\include",
+    "\\samples",
+    "\\sln",
+    "\\sln\\vc10",
+    "\\sln\\vc10\\bitfield",
+    "\\src",
+    "\\test"
+  ],
+  "SelectedNode": "\\sln\\vc10\\bitfield",
+  "PreviewInSolutionExplorer": false
+}
