@@ -309,3 +309,24 @@ TEST(TBitField, bitfields_with_different_bits_are_not_equal)
 
   EXPECT_NE(bf1, bf2);
 }
+TEST(TBitField, bit_operation_on_three_fields)
+{
+	const int size = 4;
+	TBitField bf1(size), bf2(size), bf3(size), bf4(size), expBf(size);
+	// bf1 = 0011
+	bf1.SetBit(2);
+	bf1.SetBit(3);
+	// bf2 = 0101
+	bf2.SetBit(1);
+	bf2.SetBit(3);
+	// bf3 = 0010
+	bf3.SetBit(2);
+	bf4 = bf1 | bf2 | bf3;
+	// expBf = 0111
+	expBf.SetBit(1);
+	expBf.SetBit(2);
+	expBf.SetBit(3);
+	
+
+	EXPECT_EQ(expBf, bf4);
+}
