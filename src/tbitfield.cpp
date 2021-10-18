@@ -14,7 +14,11 @@ TBitField::TBitField(int len)
 		throw "incorrect len"; 
 	}
 	BitLen = len;
-	MemLen = BitLen / (8 * sizeof(TELEM)) + 1;
+	MemLen = BitLen / (8 * sizeof(TELEM));
+	if ((BitLen % (sizeof(TELEM) * 8)) > 0)
+	{
+		MemLen++;
+	}
 	pMem = new TELEM[MemLen];
 	for (int i = 0; i < MemLen; i++)
 	{
