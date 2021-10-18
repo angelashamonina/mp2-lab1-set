@@ -83,7 +83,7 @@ int TSet::operator!=(const TSet& s) const // сравнение
 
 TSet TSet::operator+(const TSet& s) // объединение
 {
-    TSet tmp=(BitField | s.BitField);
+    TSet tmp(BitField | s.BitField);
     return tmp;
 }
 
@@ -126,9 +126,9 @@ istream& operator>>(istream& istr, TSet& s) // ввод
 
 ostream& operator<<(ostream& ostr, const TSet& s) // вывод
 {
-    for (int i = 0; i < s.BitField.GetLength(); i++)
+    for (int i = 0; i < s.GetMaxPower(); i++)
     {
-        if (s.BitField.GetBit(i))
+        if (s.IsMember(i))
         {
             ostr << i << " ";
         }
