@@ -245,5 +245,5 @@ ostream& operator<<(ostream& ostr, const TBitField& bf) // вывод
 	ostr << "\n";
 	return ostr;
 }
-str;
+
 }
